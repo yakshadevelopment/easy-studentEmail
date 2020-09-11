@@ -13,6 +13,16 @@ import static java8.easy.studentEmail.TestUtils.*
 		yakshaAssert(currentTest(),Main.createEmailAccount(name1).equals("stella.frank@tsr.edu")?"true":"false",businessTestFile);
 		yakshaAssert(currentTest(),Main.createEmailAccount(name2).equals("loren.mary.joseph@tsr.edu")?"true":"false",businessTestFile);
 	}
-	
+	@Test
+    public void testExceptionConditon() throws Exception{
+	 yakshaAssert(currentTest(),true,boundaryTestFile);
+      }
+
+	@Test
+	public void testBoundaryCondition() throws Exception {
+	  yakshaAssert(currentTest(),true,exceptionTestFile);
+   }
+
+
 
 }
